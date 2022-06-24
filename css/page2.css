@@ -1,0 +1,59 @@
+.page-2 {
+  align-items: flex-start;
+}
+
+.page-2__header {
+  margin-bottom: 24px;
+}
+
+.page-2__paragraph {
+  margin-bottom: 16vh;
+}
+
+.page-2__not-cards {
+  margin: 0 60px;
+}
+
+.page-2__cards {
+  width: 100%;
+}
+
+.page-2__cards-content {
+  padding: 0 10px;
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding: 9vh 4vw;
+}
+
+.page-2__cards-content {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.page-2__cards-content::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+/* adaptive */
+/* mobile */
+
+@media (max-width: 640px) {
+  .page-2__card {
+    min-width: 80vw;
+  }
+}
+
+/* adaptive */
+/* desktop */
+
+@media (min-width: 641px) {
+  .page-2__not-cards {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .page-2__cards {
+    margin: 0 auto;
+    overflow: auto;
+  }
+}

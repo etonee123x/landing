@@ -1,0 +1,49 @@
+.page-5__phone-group {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 36px;
+}
+
+.page-5__header {
+  margin: 0 40px;
+  margin-bottom: 16px;
+}
+
+.page-5__paragraph {
+  margin: 0 40px;
+}
+
+.page-5__between-arrows {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.page-5__between-arrows-text-block {
+  max-width: 300px;
+}
+
+/* adaptive */
+/* mobile */
+
+@media (max-width: 640px) {
+}
+
+/* adaptive */
+/* desktop */
+
+@media (min-width: 641px) {
+  .page-5__phone-group {
+    gap: 60px;
+  }
+  .page-5__header {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .page-5__paragraph {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}

@@ -1,0 +1,88 @@
+:root {
+  --coef-scale: 0.5;
+}
+
+.page-6 {
+  gap: 36px;
+}
+
+.page-6__launch-buttons {
+  margin-bottom: 36px;
+}
+
+.page-6__header {
+  margin: 0 40px;
+}
+
+.page-6__buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.page-6__not-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page-6__button {
+  margin-bottom: 24px;
+}
+
+.page-6__cards {
+  display: flex;
+  margin: 3vh 0;
+  height: 50vh;
+  width: 50vw;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page-6__card_1 {
+  top: -20%;
+}
+
+.page-6__card_2 {
+  top: 20%;
+}
+
+.page-6__card {
+  width: 500px;
+  position: absolute;
+  transform: matrix(
+    calc(var(--coef-scale) * 0.96),
+    calc(var(--coef-scale) * 0.1),
+    calc(var(--coef-scale) * -0.3),
+    calc(var(--coef-scale) * 0.99),
+    calc(var(--coef-scale) * 0),
+    calc(var(--coef-scale) * 0)
+  );
+}
+
+/* adaptive */
+/* mobile */
+
+@media (max-width: 640px) {
+}
+
+/* adaptive */
+/* desktop */
+
+@media (min-width: 641px) {
+  .page-6 {
+    flex-direction: column;
+  }
+  .page-6__not-buttons {
+    flex-direction: row;
+  }
+  .page-6__header {
+    width: 30vw;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .page-6__buttons {
+    flex-direction: row;
+    gap: 16px;
+  }
+}

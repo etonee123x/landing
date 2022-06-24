@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/table.css" />
+    <link rel="stylesheet" href="css/launch-buttons.css" />
+    <link rel="stylesheet" href="css/card.css" />
+    <link rel="stylesheet" href="css/page1.css" />
+    <link rel="stylesheet" href="css/page2.css" />
+    <link rel="stylesheet" href="css/page3.css" />
+    <link rel="stylesheet" href="css/page4.css" />
+    <link rel="stylesheet" href="css/page5.css" />
+    <link rel="stylesheet" href="css/page6.css" />
+    <script type="text/javascript" src="js/index.js"></script>
+  </head>
+  <body>
+    <div class="select-menu">
+      <div class="select-menu__the-menu">
+        <div class="select-menu__item dot-wrapper dot-wrapper_active">
+          <div class="dot-wrapper__dot"></div>
+        </div>
+        <div class="select-menu__item dot-wrapper">
+          <div class="dot-wrapper__dot"></div>
+        </div>
+        <div class="select-menu__item dot-wrapper">
+          <div class="dot-wrapper__dot"></div>
+        </div>
+        <div class="select-menu__item dot-wrapper">
+          <div class="dot-wrapper__dot"></div>
+        </div>
+        <div class="select-menu__item dot-wrapper">
+          <div class="dot-wrapper__dot"></div>
+        </div>
+        <div class="select-menu__item dot-wrapper">
+          <div class="dot-wrapper__dot"></div>
+        </div>
+        <p id="page-number" class="select-menu__item f-card-text-2 cl-yellow">01</p>
+      </div>
+    </div>
+    <div class="page">
+      <div class="page__header">
+        <img class="page__logo mobile-none" src="assets/media/logo.png" />
+        <img class="page__logo-mobile desktop-none" src="assets/media/logo-mobile.png" />
+      </div>
+
+      <div id="page-1" style="display: flex" class="page__content page-1">
+        <img class="page-1__phone phone" />
+        <div class="page-1__not-phone">
+          <div class="page-1__button button mobile-none cl-green f-big-badge">Скоро запуск</div>
+          <p class="page-1__header f-title-1 mobile-ta-center cl-white">ИЖС App</p>
+          <p class="page-1__paragraph cl-gray2 mobile-ta-center desktop-f-title-3 f-text">
+            Выберите дом напрямую от застройщиков и стройте через приложение
+          </p>
+          <div class="page-1__launch-buttons launch-buttons desktop-mb-0 cl-white">
+            <div class="launch-buttons__button">
+              <svg width="23" height="24" viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16.5024 15.3137C19.3394 13.7878 21.4901 12.6251 21.6755 12.5347C22.2685 12.2258 22.8809 11.4082 21.6755 10.7731C21.2863 10.5734 19.1908 9.44691 16.5024 7.99414L12.7754 11.6811L16.5024 15.3136V15.3137Z"
+                  fill="#DECE6F"
+                />
+                <path
+                  d="M12.7773 11.6816L0.910156 23.3972C1.1887 23.4333 1.50317 23.361 1.87393 23.1613C2.65233 22.744 10.9041 18.3298 16.5042 15.3152L12.7773 11.6816Z"
+                  fill="#E7848F"
+                />
+                <path
+                  d="M12.7752 11.6814L16.5022 8.01262C16.5022 8.01262 2.70655 0.637807 1.87187 0.202464C1.5574 0.0200223 1.20499 -0.0341709 0.889648 0.0200223L12.7752 11.6814Z"
+                  fill="#78DBA9"
+                />
+                <path
+                  d="M12.7756 11.6809L0.890009 0.0195312C0.40764 0.128774 0 0.546224 0 1.39996V22.016C0 22.7974 0.315432 23.3603 0.90845 23.4145L12.7756 11.6809Z"
+                  fill="#83CAD9"
+                />
+              </svg>
+              <div>
+                <p class="launch-buttons__launch-text">скоро запуск</p>
+                <p class="launch-buttons__store-title">Google Play</p>
+              </div>
+            </div>
+            <div class="launch-buttons__button">
+              <svg width="19" height="23" viewBox="0 0 19 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M15.6139 12.2312C15.6252 11.3497 15.8592 10.4853 16.2939 9.71851C16.7287 8.95174 17.3501 8.30752 18.1004 7.84577C17.6238 7.16434 16.995 6.60355 16.2639 6.20794C15.5329 5.81234 14.7197 5.59281 13.8891 5.56679C12.1172 5.38062 10.3995 6.62811 9.49653 6.62811C8.57614 6.62811 7.18596 5.58528 5.68895 5.61611C4.72065 5.64742 3.77697 5.92928 2.94985 6.43421C2.12273 6.93914 1.44037 7.64993 0.969276 8.49733C-1.07137 12.034 0.450772 17.2317 2.40557 20.0905C3.38361 21.4903 4.52664 23.054 6.0223 22.9985C7.48588 22.9378 8.0325 22.0643 9.79916 22.0643C11.5494 22.0643 12.0623 22.9985 13.5883 22.9633C15.1588 22.9378 16.1482 21.5572 17.092 20.1441C17.7947 19.1466 18.3354 18.0442 18.6942 16.8777C17.7818 16.4914 17.0031 15.8449 16.4554 15.0186C15.9076 14.1923 15.6149 13.2229 15.6139 12.2312Z"
+                  fill="white"
+                />
+                <path
+                  d="M12.7323 3.68686C13.5886 2.65788 14.0105 1.33531 13.9083 0C12.6001 0.13754 11.3916 0.763409 10.5238 1.7529C10.0994 2.2363 9.77446 2.79867 9.56739 3.40786C9.36031 4.01705 9.27522 4.66113 9.31697 5.30326C9.97132 5.31 10.6187 5.16803 11.2103 4.88805C11.8018 4.60806 12.3223 4.19735 12.7323 3.68686Z"
+                  fill="white"
+                />
+              </svg>
+              <div>
+                <p class="launch-buttons__launch-text">скоро запуск</p>
+                <p class="launch-buttons__store-title">App Store</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="page-2" style="display: none" class="page__content page-2">
+        <div class="page-2__not-cards">
+          <p class="page-2__header cl-white mobile-ta-center f-title-4">
+            <span class="cl-yellow">Каждую неделю</span> новые дома
+          </p>
+          <p class="page-2__paragraph cl-gray2 mobile-ta-center f-text">
+            Будьте в тренде, найдите проект дома в каталоге всех стран
+          </p>
+        </div>
+        <div class="page-2__cards">
+          <div class="page-2__cards-content">
+            <div class="page-2__card card card_yellow">
+              <p class="card__new-project">Новый проект</p>
+              <img src="assets/media/house-1.png" class="card__image" />
+              <p class="card__title f-card-title">Forest</p>
+              <div class="card__bottom">
+                <p class="card__price f-card-text">8 — 15,5 млн ₽</p>
+                <svg
+                  class="card__flag"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_67_389)">
+                    <rect x="0.000244141" y="0.00244141" width="35.9198" height="23.9954" fill="#F0F0F0" />
+                    <rect y="11.9106" width="35.9198" height="11.9977" fill="#D80027" />
+                    <path
+                      d="M6.05345 23.9921L17.9874 12.0825L6.05345 0L0.00268555 7.62793e-06V23.9921H6.05345Z"
+                      fill="#0052B4"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_67_389">
+                      <rect width="24" height="24" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+            </div>
+            <div class="page-2__card card card_white">
+              <p class="card__new-project">Новый проект</p>
+              <img src="assets/media/house-2.png" class="card__image" />
+              <p class="card__title f-card-title">Ger House</p>
+              <div class="card__bottom">
+                <p class="card__price f-card-text">8 — 12 млн ₽</p>
+                <svg
+                  class="card__flag"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_67_445)">
+                    <path d="M-6 0H29.9229V23.9954H-6V0Z" fill="#F5F5F5" />
+                    <path
+                      d="M18.2762 11.717C18.2762 15.1657 15.4804 17.9614 12.0317 17.9614C8.58304 17.9614 5.78732 15.1657 5.78732 11.717C5.78732 8.2683 8.58304 5.47258 12.0317 5.47258C15.4804 5.47258 18.2762 8.2683 18.2762 11.717Z"
+                      fill="#FF4B55"
+                    />
+                    <path
+                      d="M16.5572 11.2258C17.6847 12.1782 17.9562 13.9758 17.3991 14.9101C16.3097 16.7374 14.3137 17.9614 12.0317 17.9614C8.58304 17.9614 5.78732 15.1657 5.78732 11.717C5.78732 10.4618 6.15768 9.29304 6.7951 8.31414C5.647 10.2787 6.48455 12.156 8.10267 12.9448C9.5274 13.6393 11.0322 12.9471 12.0317 11.717C13.3999 10.0331 15.1991 10.0788 16.5572 11.2258Z"
+                      fill="#41479B"
+                    />
+                    <path
+                      d="M17.8746 19.1806C17.7121 19.075 17.6661 18.8577 17.7717 18.6952L18.8425 17.0482C18.9481 16.8858 19.1654 16.8397 19.3278 16.9453L19.5631 17.0983C19.7256 17.2039 19.7716 17.4212 19.666 17.5836L18.5952 19.2307C18.4896 19.3931 18.2723 19.4392 18.1099 19.3336L17.8746 19.1806Z"
+                      fill="#464655"
+                    />
+                    <path
+                      d="M19.5573 16.5924C19.3949 16.4868 19.3488 16.2695 19.4544 16.107L20.5252 14.46C20.6308 14.2976 20.8481 14.2515 21.0106 14.3571L21.2459 14.5101C21.4083 14.6157 21.4544 14.833 21.3487 14.9954L20.2779 16.6425C20.1723 16.8049 19.955 16.851 19.7926 16.7453L19.5573 16.5924Z"
+                      fill="#464655"
+                    />
+                    <path
+                      d="M19.1099 19.9837C18.9474 19.8781 18.9013 19.6608 19.007 19.4984L20.0778 17.8513C20.1834 17.6889 20.4007 17.6428 20.5631 17.7484L20.7984 17.9014C20.9608 18.007 21.0069 18.2243 20.9013 18.3867L19.8305 20.0338C19.7249 20.1962 19.5076 20.2423 19.3451 20.1367L19.1099 19.9837Z"
+                      fill="#464655"
+                    />
+                    <path
+                      d="M20.7926 17.3955C20.6301 17.2899 20.5841 17.0726 20.6897 16.9102L21.7605 15.2631C21.8661 15.1007 22.0834 15.0546 22.2458 15.1602L22.4811 15.3132C22.6436 15.4188 22.6896 15.6361 22.584 15.7985L21.5132 17.4456C21.4076 17.608 21.1903 17.6541 21.0279 17.5485L20.7926 17.3955Z"
+                      fill="#464655"
+                    />
+                    <path
+                      d="M20.3451 20.7868C20.1827 20.6812 20.1366 20.4639 20.2422 20.3015L21.3131 18.6544C21.4187 18.492 21.636 18.4459 21.7984 18.5515L22.0337 18.7045C22.1961 18.8101 22.2422 19.0274 22.1366 19.1899L21.0658 20.8369C20.9601 20.9993 20.7429 21.0454 20.5804 20.9398L20.3451 20.7868Z"
+                      fill="#464655"
+                    />
+                    <path
+                      d="M22.0279 18.1986C21.8654 18.093 21.8194 17.8757 21.925 17.7133L22.9958 16.0662C23.1014 15.9038 23.3187 15.8577 23.4811 15.9633L23.7164 16.1163C23.8788 16.2219 23.9249 16.4392 23.8193 16.6017L22.7485 18.2487C22.6429 18.4111 22.4256 18.4572 22.2631 18.3516L22.0279 18.1986Z"
+                      fill="#464655"
+                    />
+                    <path
+                      d="M0.233252 7.4134C0.0708171 7.3078 0.0247495 7.0905 0.130357 6.92807L2.88391 2.69283C2.98951 2.5304 3.20681 2.48433 3.36924 2.58993L3.60453 2.74291C3.76697 2.84852 3.81303 3.06581 3.70743 3.22824L0.953876 7.46348C0.848269 7.62592 0.630977 7.67199 0.468543 7.56638L0.233252 7.4134Z"
+                      fill="#464655"
+                    />
+                    <path
+                      d="M1.46853 8.21652C1.3061 8.11091 1.26003 7.89362 1.36563 7.73119L4.11919 3.49595C4.22479 3.33351 4.44208 3.28745 4.60452 3.39305L4.83981 3.54603C5.00224 3.65164 5.04831 3.86893 4.9427 4.03136L2.18915 8.2666C2.08355 8.42904 1.86626 8.4751 1.70382 8.3695L1.46853 8.21652Z"
+                      fill="#464655"
+                    />
+                    <path
+                      d="M2.70381 9.01964C2.54137 8.91403 2.49531 8.69674 2.60091 8.53431L5.35446 4.29907C5.46007 4.13663 5.67736 4.09057 5.8398 4.19617L6.07509 4.34915C6.23752 4.45476 6.28359 4.67205 6.17798 4.83448L3.42443 9.06972C3.31882 9.23216 3.10153 9.27822 2.9391 9.17262L2.70381 9.01964Z"
+                      fill="#464655"
+                    />
+                    <path
+                      d="M21.0889 9.17014C20.929 9.27948 20.7107 9.23845 20.6014 9.07851L19.4927 7.4567C19.3834 7.29675 19.4244 7.07846 19.5843 6.96912L19.816 6.81074C19.976 6.7014 20.1943 6.74242 20.3036 6.90237L21.4123 8.52418C21.5216 8.68412 21.4806 8.90242 21.3206 9.01176L21.0889 9.17014Z"
+                      fill="#464655"
+                    />
+                    <path
+                      d="M19.3468 6.62159C19.1868 6.73093 18.9685 6.6899 18.8592 6.52995L17.7505 4.90815C17.6412 4.7482 17.6822 4.5299 17.8421 4.42056L18.0738 4.26218C18.2338 4.15284 18.4521 4.19387 18.5614 4.35381L19.6701 5.97562C19.7794 6.13557 19.7384 6.35387 19.5784 6.46321L19.3468 6.62159Z"
+                      fill="#464655"
+                    />
+                    <path
+                      d="M22.3053 8.33864C22.1454 8.44798 21.9271 8.40696 21.8177 8.24701L18.9669 4.07665C18.8575 3.9167 18.8985 3.6984 19.0585 3.58906L19.2902 3.43068C19.4501 3.32134 19.6684 3.36237 19.7778 3.52231L22.6286 7.69268C22.738 7.85262 22.6969 8.07092 22.537 8.18026L22.3053 8.33864Z"
+                      fill="#464655"
+                    />
+                    <path
+                      d="M23.5217 7.50714C23.3617 7.61648 23.1434 7.57546 23.0341 7.41551L21.9254 5.7937C21.8161 5.63376 21.8571 5.41546 22.017 5.30612L22.2487 5.14774C22.4087 5.0384 22.627 5.07942 22.7363 5.23937L23.845 6.86118C23.9543 7.02112 23.9133 7.23942 23.7533 7.34876L23.5217 7.50714Z"
+                      fill="#464655"
+                    />
+                    <path
+                      d="M21.7795 4.95859C21.6195 5.06793 21.4012 5.0269 21.2919 4.86695L20.1832 3.24515C20.0739 3.0852 20.1149 2.8669 20.2748 2.75756L20.5065 2.59918C20.6665 2.48984 20.8848 2.53087 20.9941 2.69081L22.1028 4.31262C22.2121 4.47257 22.1711 4.69087 22.0112 4.80021L21.7795 4.95859Z"
+                      fill="#464655"
+                    />
+                    <path
+                      d="M3.44312 20.9306C3.28317 21.0399 3.06487 20.9989 2.95553 20.8389L0.104677 16.6686C-0.00466254 16.5086 0.0363627 16.2903 0.196309 16.181L0.427996 16.0226C0.587942 15.9133 0.806241 15.9543 0.91558 16.1142L3.76644 20.2846C3.87577 20.4445 3.83475 20.6628 3.6748 20.7722L3.44312 20.9306Z"
+                      fill="#464655"
+                    />
+                    <path
+                      d="M4.65947 20.1692C4.49953 20.2786 4.28123 20.2375 4.17189 20.0776L3.06322 18.4558C2.95388 18.2958 2.99491 18.0775 3.15486 17.9682L3.38654 17.8098C3.54649 17.7005 3.76479 17.7415 3.87413 17.9014L4.98279 19.5233C5.09213 19.6832 5.05111 19.9015 4.89116 20.0108L4.65947 20.1692Z"
+                      fill="#464655"
+                    />
+                    <path
+                      d="M2.91729 17.6207C2.75734 17.73 2.53904 17.689 2.4297 17.529L1.32103 15.9072C1.2117 15.7473 1.25272 15.529 1.41267 15.4196L1.64435 15.2613C1.8043 15.1519 2.0226 15.1929 2.13194 15.3529L3.2406 16.9747C3.34994 17.1346 3.30892 17.3529 3.14897 17.4623L2.91729 17.6207Z"
+                      fill="#464655"
+                    />
+                    <path
+                      d="M5.87583 19.2676C5.71588 19.3769 5.49758 19.3359 5.38824 19.1759L2.53739 15.0056C2.42805 14.8456 2.46907 14.6273 2.62902 14.518L2.86071 14.3596C3.02065 14.2503 3.23895 14.2913 3.34829 14.4512L6.19915 18.6216C6.30849 18.7815 6.26746 18.9998 6.10751 19.1092L5.87583 19.2676Z"
+                      fill="#464655"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_67_445">
+                      <rect width="36" height="24" fill="white" transform="translate(-6)" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+            </div>
+            <div class="page-2__card card card_yellow">
+              <p class="card__new-project">Новый проект</p>
+              <img src="assets/media/house-3.png" class="card__image" />
+              <p class="card__title f-card-title">Man's Land</p>
+              <div class="card__bottom">
+                <p class="card__price f-card-text">6,5 — 9 млн ₽</p>
+                <svg
+                  class="card__flag"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect width="36" height="24" transform="translate(-6)" fill="#D9D9D9" />
+                  <path d="M-6 0H29.923V8.00001H-6V0Z" fill="black" />
+                  <path d="M-6 8.00001H29.923L29.923 16.0001H-5.99994L-6 8.00001Z" fill="#D80027" />
+                  <path d="M-5.99994 16.0001H29.923V24H-5.99994V16.0001Z" fill="#FFDA44" />
+                </svg>
+              </div>
+            </div>
+            <div class="page-2__card card card_white">
+              <p class="card__new-project">Новый проект</p>
+              <img src="assets/media/house-4.png" class="card__image" />
+              <p class="card__title f-card-title">Suffolk</p>
+              <div class="card__bottom">
+                <p class="card__price f-card-text">6 — 13,5 млн ₽</p>
+                <svg
+                  class="card__flag"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_67_524)">
+                    <rect x="-5.99951" y="0.00244141" width="35.9198" height="23.9954" fill="#1E66BB" />
+                    <rect
+                      x="-6.61865"
+                      y="26.2051"
+                      width="3.20496"
+                      height="49.2449"
+                      transform="rotate(-123.416 -6.61865 26.2051)"
+                      fill="#F0F0F0"
+                    />
+                    <rect
+                      x="-6.66602"
+                      y="25.6108"
+                      width="1.01898"
+                      height="23.0289"
+                      transform="rotate(-123.416 -6.66602 25.6108)"
+                      fill="#D80027"
+                    />
+                    <rect
+                      x="12.1704"
+                      y="11.8926"
+                      width="1.01898"
+                      height="22.698"
+                      transform="rotate(-123.416 12.1704 11.8926)"
+                      fill="#D80027"
+                    />
+                    <rect
+                      x="32.3853"
+                      y="23.5195"
+                      width="3.20496"
+                      height="49.2449"
+                      transform="rotate(123.39 32.3853 23.5195)"
+                      fill="#F0F0F0"
+                    />
+                    <rect
+                      x="31.8574"
+                      y="23.7969"
+                      width="1.01898"
+                      height="23.0289"
+                      transform="rotate(123.39 31.8574 23.7969)"
+                      fill="#D80027"
+                    />
+                    <rect
+                      x="11.8296"
+                      y="11.8862"
+                      width="1.01898"
+                      height="22.698"
+                      transform="rotate(123.39 11.8296 11.8862)"
+                      fill="#D80027"
+                    />
+                    <rect
+                      x="29.9199"
+                      y="8.98145"
+                      width="6.03227"
+                      height="35.9195"
+                      transform="rotate(90 29.9199 8.98145)"
+                      fill="#F0F0F0"
+                    />
+                    <rect x="8.94385" width="6.03227" height="23.9954" fill="#F0F0F0" />
+                    <rect
+                      x="29.9199"
+                      y="10.4482"
+                      width="3.11048"
+                      height="35.9197"
+                      transform="rotate(90 29.9199 10.4482)"
+                      fill="#D80027"
+                    />
+                    <rect x="10.437" width="3.11048" height="23.9954" fill="#D80027" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_67_524">
+                      <rect width="36" height="24" fill="white" transform="translate(-6)" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+            </div>
+            <div class="page-2__card card card_yellow">
+              <p class="card__new-project">Новый проект</p>
+              <img src="assets/media/house-5.png" class="card__image" />
+              <p class="card__title f-card-title">Two in one house</p>
+              <div class="card__bottom">
+                <p class="card__price f-card-text">8 — 14 млн ₽</p>
+                <svg
+                  class="card__flag"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect x="-6" y="0.00244141" width="35.9198" height="23.9954" fill="#D80027" />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M14.0651 5.78955H9.94396V9.97031H5.76367L5.76367 14.0914H9.94396V18.2722H14.0651V14.0914H18.2463V9.97031H14.0651V5.78955Z"
+                    fill="#F0F0F0"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="page-3" style="display: none" class="page__content page-3">
+        <p class="page-3__header cl-white mobile-ta-center f-title-4">
+          Занимайтесь <span class="cl-yellow">семьей и делами</span>, пока строится дом вашей мечты
+        </p>
+        <p class="page-3__paragraph cl-gray2 mobile-ta-center desktop-f-text-1 f-text">
+          Не тратьте 218 000 ₽ и 380 часов, а используйте ИЖС Genius — все инженеры и Росреестр в одном окне за 0 ₽
+        </p>
+      </div>
+
+      <div id="page-4" style="display: none" class="page__content page-4">
+        <div class="page-4__not-table">
+          <div class="page-4__button button cl-green f-big-badge">ИЖС Club</div>
+          <p class="page-4__header cl-white mobile-ta-center f-title-4 desktop-title-1">
+            Сохраните до <span class="cl-yellow">миллиона</span> рублей
+          </p>
+          <p class="page-4__paragraph cl-gray2 mobile-ta-center desktop-f-text-1 f-text">
+            Используйте программу лояльности ИЖС Club
+          </p>
+        </div>
+        <div class="page-4__table desktop-mb-0">
+          <div class="page-4__table-content table">
+            <div class="table__content f-card-text">
+              <div class="table__row">
+                <p class="table__cell">Кэшбэк на Landscape</p>
+                <p class="table__cell">- 55 000 ₽</p>
+              </div>
+              <div class="table__row">
+                <p class="table__cell">ИЖС Genius</p>
+                <p class="table__cell">- 218 000 ₽</p>
+              </div>
+              <div class="table__row">
+                <p class="table__cell">Уборка и вывоз мусора</p>
+                <p class="table__cell">- 89 000 ₽</p>
+              </div>
+              <div class="table__row">
+                <p class="table__cell">Доставка</p>
+                <p class="table__cell">- 65 000 ₽</p>
+              </div>
+              <div class="table__row">
+                <p class="table__cell">RED</p>
+                <p class="table__cell">- 500 000 ₽</p>
+              </div>
+            </div>
+            <div class="table__bottom f-card-title">
+              <p>Вы экономите</p>
+              <p>927 000 ₽</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="page-5" style="display: none" class="page__content page-5">
+        <div id="page-5_tab-1" class="page-5__tab">
+          <div class="page-5__phone-group desktop-mb-0">
+            <svg
+              class="page-5__arrow-left"
+              width="25"
+              height="24"
+              viewBox="0 0 25 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M15.4409 19.5L7.94092 12L15.4409 4.5"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <div class="page-5__between-arrows">
+              <div class="page-5__between-arrows-text-block mobile-none">
+                <p class="page-5__header mobile-ta-center cl-yellow f-card-title">Стройка</p>
+                <p class="page-5__paragraph mobile-ta-center cl-gray2 desktop-card-text-2">
+                  Следите за стройкой — трансляция и документы<br />Инженеры все сделают, а потом подгрузят информацию
+                </p>
+              </div>
+              <img class="page-5__phone phone" />
+            </div>
+            <svg
+              class="page-5__arrow-right"
+              width="25"
+              height="24"
+              viewBox="0 0 25 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M9.55908 4.5L17.0591 12L9.55908 19.5"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <div class="desktop-none">
+            <p class="page-5__header mobile-ta-center cl-yellow f-card-title">Стройка</p>
+            <p class="page-5__paragraph mobile-ta-center cl-gray2 f-card-text">
+              Следите за стройкой — трансляция и документы<br />Инженеры все сделают, а потом подгрузят информацию
+            </p>
+          </div>
+        </div>
+        <div id="page-5_tab-2" class="page-5__tab" style="display: none">
+          <div class="page-5__phone-group desktop-mb-0">
+            <svg
+              class="page-5__arrow-left"
+              width="25"
+              height="24"
+              viewBox="0 0 25 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M15.4409 19.5L7.94092 12L15.4409 4.5"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <div class="page-5__between-arrows">
+              <div class="page-5__between-arrows-text-block mobile-none">
+                <p class="page-5__header mobile-ta-center cl-yellow f-card-title">Справедливая цена</p>
+                <p class="page-5__paragraph mobile-ta-center cl-gray2 desktop-card-text-2">
+                  Выберите проект дома, а застройщики предложат цену строительства
+                </p>
+              </div>
+              <img class="page-5__phone phone" />
+            </div>
+            <svg
+              class="page-5__arrow-right"
+              width="25"
+              height="24"
+              viewBox="0 0 25 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M9.55908 4.5L17.0591 12L9.55908 19.5"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <div class="desktop-none">
+            <p class="page-5__header mobile-ta-center cl-yellow f-card-title">Справедливая цена</p>
+            <p class="page-5__paragraph mobile-ta-center cl-gray2 f-card-text">
+              Выберите проект дома, а застройщики предложат цену строительства
+            </p>
+          </div>
+        </div>
+        <div id="page-5_tab-3" class="page-5__tab" style="display: none">
+          <div class="page-5__phone-group desktop-mb-0">
+            <svg
+              class="page-5__arrow-left"
+              width="25"
+              height="24"
+              viewBox="0 0 25 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M15.4409 19.5L7.94092 12L15.4409 4.5"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <div class="page-5__between-arrows">
+              <div class="page-5__between-arrows-text-block mobile-none">
+                <p class="page-5__header mobile-ta-center cl-yellow f-card-title">Сервисы</p>
+                <p class="page-5__paragraph mobile-ta-center cl-gray2 desktop-card-text-2">
+                  Проверьте участок перед покупкой, постройте дом по референсу и другое
+                </p>
+              </div>
+              <img class="page-5__phone phone" />
+            </div>
+            <svg
+              class="page-5__arrow-right"
+              width="25"
+              height="24"
+              viewBox="0 0 25 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M9.55908 4.5L17.0591 12L9.55908 19.5"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <div class="desktop-none">
+            <p class="page-5__header mobile-ta-center cl-yellow f-card-title">Сервисы</p>
+            <p class="page-5__paragraph mobile-ta-center cl-gray2 f-card-text">
+              Проверьте участок перед покупкой, постройте дом по референсу и другое
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div id="page-6" style="display: none" class="page__content page-6">
+        <div class="page-6__not-buttons">
+          <p class="page-6__header mobile-ta-center desktop-mb-0 cl-white f-title-4">
+            Дома от застройщиков и строительство через <span class="cl-yellow">приложение</span>
+          </p>
+          <div class="page-6__cards">
+            <div class="page-6__card page-6__card_1 card card_white">
+              <p class="card__new-project">Новый проект</p>
+              <img src="assets/media/house-4.png" class="card__image" />
+              <p class="card__title f-card-title">Suffolk</p>
+              <div class="card__bottom">
+                <p class="card__price f-card-text">6 — 13,5 млн ₽</p>
+                <svg
+                  class="card__flag"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_67_524)">
+                    <rect x="-5.99951" y="0.00244141" width="35.9198" height="23.9954" fill="#1E66BB" />
+                    <rect
+                      x="-6.61865"
+                      y="26.2051"
+                      width="3.20496"
+                      height="49.2449"
+                      transform="rotate(-123.416 -6.61865 26.2051)"
+                      fill="#F0F0F0"
+                    />
+                    <rect
+                      x="-6.66602"
+                      y="25.6108"
+                      width="1.01898"
+                      height="23.0289"
+                      transform="rotate(-123.416 -6.66602 25.6108)"
+                      fill="#D80027"
+                    />
+                    <rect
+                      x="12.1704"
+                      y="11.8926"
+                      width="1.01898"
+                      height="22.698"
+                      transform="rotate(-123.416 12.1704 11.8926)"
+                      fill="#D80027"
+                    />
+                    <rect
+                      x="32.3853"
+                      y="23.5195"
+                      width="3.20496"
+                      height="49.2449"
+                      transform="rotate(123.39 32.3853 23.5195)"
+                      fill="#F0F0F0"
+                    />
+                    <rect
+                      x="31.8574"
+                      y="23.7969"
+                      width="1.01898"
+                      height="23.0289"
+                      transform="rotate(123.39 31.8574 23.7969)"
+                      fill="#D80027"
+                    />
+                    <rect
+                      x="11.8296"
+                      y="11.8862"
+                      width="1.01898"
+                      height="22.698"
+                      transform="rotate(123.39 11.8296 11.8862)"
+                      fill="#D80027"
+                    />
+                    <rect
+                      x="29.9199"
+                      y="8.98145"
+                      width="6.03227"
+                      height="35.9195"
+                      transform="rotate(90 29.9199 8.98145)"
+                      fill="#F0F0F0"
+                    />
+                    <rect x="8.94385" width="6.03227" height="23.9954" fill="#F0F0F0" />
+                    <rect
+                      x="29.9199"
+                      y="10.4482"
+                      width="3.11048"
+                      height="35.9197"
+                      transform="rotate(90 29.9199 10.4482)"
+                      fill="#D80027"
+                    />
+                    <rect x="10.437" width="3.11048" height="23.9954" fill="#D80027" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_67_524">
+                      <rect width="36" height="24" fill="white" transform="translate(-6)" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+            </div>
+            <div class="page-6__card page-6__card_2 card card_yellow">
+              <p class="card__new-project">Новый проект</p>
+              <img src="assets/media/house-1.png" class="card__image" />
+              <p class="card__title f-card-title">Forest</p>
+              <div class="card__bottom">
+                <p class="card__price f-card-text">8 — 15,5 млн ₽</p>
+                <svg
+                  class="card__flag"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_67_389)">
+                    <rect x="0.000244141" y="0.00244141" width="35.9198" height="23.9954" fill="#F0F0F0" />
+                    <rect y="11.9106" width="35.9198" height="11.9977" fill="#D80027" />
+                    <path
+                      d="M6.05345 23.9921L17.9874 12.0825L6.05345 0L0.00268555 7.62793e-06V23.9921H6.05345Z"
+                      fill="#0052B4"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_67_389">
+                      <rect width="24" height="24" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="page-6__buttons">
+          <p class="page-6__button button cl-green desktop-mb-0 f-big-badge">Скоро запуск</p>
+          <div class="page-6__launch-buttons cl-white desktop-mb-0 launch-buttons">
+            <div class="launch-buttons__button">
+              <svg width="23" height="24" viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16.5024 15.3137C19.3394 13.7878 21.4901 12.6251 21.6755 12.5347C22.2685 12.2258 22.8809 11.4082 21.6755 10.7731C21.2863 10.5734 19.1908 9.44691 16.5024 7.99414L12.7754 11.6811L16.5024 15.3136V15.3137Z"
+                  fill="#DECE6F"
+                />
+                <path
+                  d="M12.7773 11.6816L0.910156 23.3972C1.1887 23.4333 1.50317 23.361 1.87393 23.1613C2.65233 22.744 10.9041 18.3298 16.5042 15.3152L12.7773 11.6816Z"
+                  fill="#E7848F"
+                />
+                <path
+                  d="M12.7752 11.6814L16.5022 8.01262C16.5022 8.01262 2.70655 0.637807 1.87187 0.202464C1.5574 0.0200223 1.20499 -0.0341709 0.889648 0.0200223L12.7752 11.6814Z"
+                  fill="#78DBA9"
+                />
+                <path
+                  d="M12.7756 11.6809L0.890009 0.0195312C0.40764 0.128774 0 0.546224 0 1.39996V22.016C0 22.7974 0.315432 23.3603 0.90845 23.4145L12.7756 11.6809Z"
+                  fill="#83CAD9"
+                />
+              </svg>
+              <div>
+                <p class="launch-buttons__launch-text">скоро запуск</p>
+                <p class="launch-buttons__store-title">Google Play</p>
+              </div>
+            </div>
+            <div class="launch-buttons__button">
+              <svg width="19" height="23" viewBox="0 0 19 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M15.6139 12.2312C15.6252 11.3497 15.8592 10.4853 16.2939 9.71851C16.7287 8.95174 17.3501 8.30752 18.1004 7.84577C17.6238 7.16434 16.995 6.60355 16.2639 6.20794C15.5329 5.81234 14.7197 5.59281 13.8891 5.56679C12.1172 5.38062 10.3995 6.62811 9.49653 6.62811C8.57614 6.62811 7.18596 5.58528 5.68895 5.61611C4.72065 5.64742 3.77697 5.92928 2.94985 6.43421C2.12273 6.93914 1.44037 7.64993 0.969276 8.49733C-1.07137 12.034 0.450772 17.2317 2.40557 20.0905C3.38361 21.4903 4.52664 23.054 6.0223 22.9985C7.48588 22.9378 8.0325 22.0643 9.79916 22.0643C11.5494 22.0643 12.0623 22.9985 13.5883 22.9633C15.1588 22.9378 16.1482 21.5572 17.092 20.1441C17.7947 19.1466 18.3354 18.0442 18.6942 16.8777C17.7818 16.4914 17.0031 15.8449 16.4554 15.0186C15.9076 14.1923 15.6149 13.2229 15.6139 12.2312Z"
+                  fill="white"
+                />
+                <path
+                  d="M12.7323 3.68686C13.5886 2.65788 14.0105 1.33531 13.9083 0C12.6001 0.13754 11.3916 0.763409 10.5238 1.7529C10.0994 2.2363 9.77446 2.79867 9.56739 3.40786C9.36031 4.01705 9.27522 4.66113 9.31697 5.30326C9.97132 5.31 10.6187 5.16803 11.2103 4.88805C11.8018 4.60806 12.3223 4.19735 12.7323 3.68686Z"
+                  fill="white"
+                />
+              </svg>
+              <div>
+                <p class="launch-buttons__launch-text">скоро запуск</p>
+                <p class="launch-buttons__store-title">App Store</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page__footer">
+        <svg
+          id="icon-next-page"
+          width="36"
+          height="36"
+          viewBox="0 0 36 36"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M29.25 18L18 29.25L6.75 18"
+            stroke="white"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M29.25 6.75L18 18L6.75 6.75"
+            stroke="white"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </div>
+    </div>
+  </body>
+</html>
