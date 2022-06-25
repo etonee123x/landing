@@ -2,34 +2,34 @@
   --coef-scale: 0.5;
 }
 
-.page-6 {
+.page-8 {
   gap: 36px;
 }
 
-.page-6__launch-buttons {
+.page-8__launch-buttons {
   margin-bottom: 36px;
 }
 
-.page-6__header {
+.page-8__header {
   margin: 0 40px;
 }
 
-.page-6__buttons {
+.page-8__buttons {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.page-6__not-buttons {
+.page-8__not-buttons {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.page-6__button {
+.page-8__button {
   margin-bottom: 24px;
 }
 
-.page-6__cards {
+.page-8__cards {
   display: flex;
   margin: 3vh 0;
   height: 50vh;
@@ -39,15 +39,15 @@
   align-items: center;
 }
 
-.page-6__card_1 {
+.page-8__card_1 {
   top: -20%;
 }
 
-.page-6__card_2 {
+.page-8__card_2 {
   top: 20%;
 }
 
-.page-6__card {
+.page-8__card {
   width: 500px;
   position: absolute;
   transform: matrix(
@@ -70,18 +70,18 @@
 /* desktop */
 
 @media (min-width: 641px) {
-  .page-6 {
+  .page-8 {
     flex-direction: column;
   }
-  .page-6__not-buttons {
+  .page-8__not-buttons {
     flex-direction: row;
   }
-  .page-6__header {
+  .page-8__header {
     width: 30vw;
     margin-left: 0;
     margin-right: 0;
   }
-  .page-6__buttons {
+  .page-8__buttons {
     flex-direction: row;
     gap: 16px;
   }

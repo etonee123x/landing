@@ -1,4 +1,4 @@
-.page-5__phone-group {
+.page-7__phone-group {
   display: flex;
   gap: 24px;
   justify-content: center;
@@ -6,22 +6,22 @@
   margin-bottom: 36px;
 }
 
-.page-5__header {
+.page-7__header {
   margin: 0 40px;
   margin-bottom: 16px;
 }
 
-.page-5__paragraph {
+.page-7__paragraph {
   margin: 0 40px;
 }
 
-.page-5__between-arrows {
+.page-7__between-arrows {
   display: flex;
   gap: 40px;
   align-items: center;
 }
 
-.page-5__between-arrows-text-block {
+.page-7__between-arrows-text-block {
   max-width: 300px;
 }
 
@@ -35,14 +35,14 @@
 /* desktop */
 
 @media (min-width: 641px) {
-  .page-5__phone-group {
+  .page-7__phone-group {
     gap: 60px;
   }
-  .page-5__header {
+  .page-7__header {
     margin-left: 0;
     margin-right: 0;
   }
-  .page-5__paragraph {
+  .page-7__paragraph {
     margin-left: 0;
     margin-right: 0;
   }

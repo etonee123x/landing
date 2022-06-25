@@ -17,11 +17,11 @@ const init = () => {
   const footer = document.getElementById('footer');
   const footerDescription = document.getElementById('footer-description');
 
-  const page5Tabs = document.querySelectorAll('.page-5__tab');
-  const page5LeftArrows = document.querySelectorAll('.page-5__arrow-left');
-  const page5RightArrows = document.querySelectorAll('.page-5__arrow-right');
+  const page5Tabs = document.querySelectorAll('.page-7__tab');
+  const page5LeftArrows = document.querySelectorAll('.page-7__arrow-left');
+  const page5RightArrows = document.querySelectorAll('.page-7__arrow-right');
 
-  const page2CardsContent = document.querySelector('.page-2__cards-content');
+  const page2CardsContent = document.querySelector('.page-3__cards-content');
 
   let currentPage = 1;
   let page5ActiveTab = 1;
@@ -73,7 +73,7 @@ const init = () => {
   const onWheel = (e) => {
     const path = e.path ?? e.composedPath;
     if (!path) return;
-    path.find((el) => el.classList.contains('page-2__cards-content')).scrollLeft += e.deltaY;
+    path.find((el) => el.classList.contains('page-3__cards-content')).scrollLeft += e.deltaY;
   };
 
   let touchStartY;

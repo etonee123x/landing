@@ -1,12 +1,12 @@
-.page-3 {
+.page-5 {
 }
 
-.page-3__header {
+.page-5__header {
   margin: 0 60px;
   margin-bottom: 24px;
 }
 
-.page-3__paragraph {
+.page-5__paragraph {
   margin: 0 60px;
 }
 
@@ -20,11 +20,11 @@
 /* desktop */
 
 @media (min-width: 641px) {
-  .page-3 {
+  .page-5 {
     margin: 0 10vw;
     max-width: 760px;
   }
-  .page-3__header {
+  .page-5__header {
     font-family: Montserrat;
     font-size: 34px;
     font-weight: 800;
@@ -32,6 +32,6 @@
     letter-spacing: 0em;
     text-align: left;
   }
-  page-3__paragraph {
+  page-5__paragraph {
   }
 }

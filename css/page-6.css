@@ -1,28 +1,28 @@
-.page-4 {
+.page-6 {
   justify-content: flex-end;
 }
 
-.page-4__button {
+.page-6__button {
   margin-bottom: 24px;
 }
 
-.page-4__header {
+.page-6__header {
   margin-bottom: 24px;
 }
 
-.page-4__paragraph {
+.page-6__paragraph {
   margin-bottom: 32px;
 }
 
-.page-4__table-content {
+.page-6__table-content {
 }
-.page-4__not-table {
+.page-6__not-table {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.page-4__table {
+.page-6__table {
   margin-bottom: 24px;
   padding: 0 10px;
   width: 100%;
@@ -32,7 +32,7 @@
 /* mobile */
 
 @media (max-width: 640px) {
-  .page-4__not-table {
+  .page-6__not-table {
     margin: 0 60px;
   }
 }
@@ -41,13 +41,13 @@
 /* desktop */
 
 @media (min-width: 641px) {
-  .page-4 {
+  .page-6 {
     flex-direction: row;
   }
-  .page-4__table {
+  .page-6__table {
     max-width: 520px;
   }
-  .page-4__not-table {
+  .page-6__not-table {
     align-items: flex-start;
   }
 }

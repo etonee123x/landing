@@ -1,24 +1,24 @@
-.page-2 {
+.page-3 {
   align-items: flex-start;
 }
 
-.page-2__header {
+.page-3__header {
   margin-bottom: 24px;
 }
 
-.page-2__paragraph {
+.page-3__paragraph {
   margin-bottom: 16vh;
 }
 
-.page-2__not-cards {
+.page-3__not-cards {
   margin: 0 60px;
 }
 
-.page-2__cards {
+.page-3__cards {
   width: 100%;
 }
 
-.page-2__cards-content {
+.page-3__cards-content {
   padding: 0 10px;
   display: flex;
   overflow-x: auto;
@@ -26,11 +26,11 @@
   padding: 9vh 4vw;
 }
 
-.page-2__cards-content {
+.page-3__cards-content {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
-.page-2__cards-content::-webkit-scrollbar {
+.page-3__cards-content::-webkit-scrollbar {
   width: 0;
   height: 0;
 }
@@ -39,7 +39,7 @@
 /* mobile */
 
 @media (max-width: 640px) {
-  .page-2__card {
+  .page-3__card {
     min-width: 80vw;
   }
 }
@@ -48,11 +48,11 @@
 /* desktop */
 
 @media (min-width: 641px) {
-  .page-2__not-cards {
+  .page-3__not-cards {
     margin-left: 0;
     margin-right: 0;
   }
-  .page-2__cards {
+  .page-3__cards {
     margin: 0 auto;
     overflow: auto;
   }
