@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="css/launch-buttons.css" />
     <link rel="stylesheet" href="css/card.css" />
     <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/dots-navigation.css" />
     <link rel="stylesheet" href="css/other.css" />
     <link rel="stylesheet" href="css/page1.css" />
     <link rel="stylesheet" href="css/page2.css" />
@@ -17,27 +19,33 @@
     <script type="text/javascript" src="js/index.js"></script>
   </head>
   <body>
-    <div class="select-menu">
-      <div class="select-menu__the-menu">
-        <div class="select-menu__item dot-wrapper dot-wrapper_active">
+    <div class="dots-navigation">
+      <div class="dots-navigation__menu">
+        <div class="dots-navigation__dot-wrapper dots-navigation__dot-wrapper_active">
           <div class="dot-wrapper__dot"></div>
         </div>
-        <div class="select-menu__item dot-wrapper">
+        <div class="dots-navigation__dot-wrapper">
           <div class="dot-wrapper__dot"></div>
         </div>
-        <div class="select-menu__item dot-wrapper">
+        <div class="dots-navigation__dot-wrapper">
           <div class="dot-wrapper__dot"></div>
         </div>
-        <div class="select-menu__item dot-wrapper">
+        <div class="dots-navigation__dot-wrapper">
           <div class="dot-wrapper__dot"></div>
         </div>
-        <div class="select-menu__item dot-wrapper">
+        <div class="dots-navigation__dot-wrapper">
           <div class="dot-wrapper__dot"></div>
         </div>
-        <div class="select-menu__item dot-wrapper">
+        <div class="dots-navigation__dot-wrapper dot-wrapper">
           <div class="dot-wrapper__dot"></div>
         </div>
-        <p id="page-number" class="select-menu__item f-card-text-2 cl-yellow">01</p>
+        <div class="dots-navigation__dot-wrapper dot-wrapper">
+          <div class="dot-wrapper__dot"></div>
+        </div>
+        <div class="dots-navigation__dot-wrapper dot-wrapper">
+          <div class="dot-wrapper__dot"></div>
+        </div>
+        <p id="page-number" class="cl-blue">01</p>
       </div>
     </div>
     <div class="page">
@@ -156,7 +164,6 @@
           </div>
         </div>
       </div>
-
       <div id="page-1" style="display: flex" class="page__content page-1">
         <img class="page-1__phone phone" />
         <div class="page-1__not-phone">
@@ -879,30 +886,25 @@
         </div>
       </div>
 
-      <div class="page__footer">
+      <div id="page-7" style="display: none" class="page__content page-7"></div>
+
+      <div id="page-8" style="display: none" class="page__content page-8"></div>
+
+      <div id="footer" class="page__footer footer">
         <svg
-          id="icon-next-page"
-          width="36"
-          height="36"
-          viewBox="0 0 36 36"
+          class="footer__icon"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
-            d="M29.25 18L18 29.25L6.75 18"
-            stroke="white"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-          <path
-            d="M29.25 6.75L18 18L6.75 6.75"
-            stroke="white"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            d="M12 13.1727L16.95 8.22266L18.364 9.63666L12 16.0007L5.63599 9.63666L7.04999 8.22266L12 13.1727Z"
+            fill="#090909"
           />
         </svg>
+        <p id="footer-description" class="footer__description">Как это работает?</p>
       </div>
     </div>
   </body>

@@ -1,10 +1,21 @@
 const init = () => {
   console.log('inited!');
-  const menuDots = document.querySelectorAll('.dot-wrapper');
+  const FOOTER_DESCRIPTIONS = [
+    'Как это работает?',
+    'Архитектура',
+    'ИЖС Стандарт',
+    'Удобство',
+    'Программа лояльности',
+    'Детали',
+    'Скачать приложение',
+  ];
+
+  const menuDots = document.querySelectorAll('.dots-navigation__dot-wrapper');
   const contentPages = document.querySelectorAll('.page__content');
   const pageNumber = document.getElementById('page-number');
-  const iconNextPage = document.getElementById('icon-next-page');
   const header = document.getElementById('header');
+  const footer = document.getElementById('footer');
+  const footerDescription = document.getElementById('footer-description');
 
   const page5Tabs = document.querySelectorAll('.page-5__tab');
   const page5LeftArrows = document.querySelectorAll('.page-5__arrow-left');
@@ -17,22 +28,30 @@ const init = () => {
 
   const changePage = (number) => {
     if (number === currentPage) return;
-    number === 1 || number === contentPages.length
-      ? header.classList.add('header_logo-only')
-      : header.classList.remove('header_logo-only');
-    menuDots.forEach((dot) => dot.classList.remove('dot-wrapper_active'));
-    menuDots[number - 1].classList.add('dot-wrapper_active');
+
+    const isFirstPage = number === 1;
+    const isLastPage = number === contentPages.length;
+
+    footer.style.display = 'flex';
+    if (isFirstPage || isLastPage) {
+      header.classList.add('header_logo-only');
+      if (isLastPage) {
+        footer.style.display = 'none';
+      }
+    } else {
+      header.classList.remove('header_logo-only');
+    }
+    if (!isLastPage) {
+      footerDescription.innerText = FOOTER_DESCRIPTIONS[number - 1];
+    }
+    menuDots.forEach((dot) => dot.classList.remove('dots-navigation__dot-wrapper_active'));
+    menuDots[number - 1].classList.add('dots-navigation__dot-wrapper_active');
     pageNumber.innerText = `${number < 10 ? '0' : ''}${number}`;
     contentPages.forEach((page) => {
       page.style.display = 'none';
     });
     contentPages[number - 1].style.display = 'flex';
     currentPage = number;
-    if (number === contentPages.length) {
-      iconNextPage.style.display = 'none';
-    } else {
-      iconNextPage.style.display = 'block';
-    }
   };
 
   const prevTab = () => {
@@ -57,14 +76,56 @@ const init = () => {
     path.find((el) => el.classList.contains('page-2__cards-content')).scrollLeft += e.deltaY;
   };
 
+  let touchStartY;
+  let deltaMouseScroll = 0;
+
+  const onTouchStart = (event) => {
+    touchStartY = event.touches[0].screenY;
+  };
+
+  const onGlobalTouchMove = (event) => {
+    const SCROLL_THRESHOLD = window.innerHeight / contentPages.length;
+
+    const currentY = event.touches[0].screenY;
+    const delta = currentY - touchStartY;
+    const absDelta = Math.abs(delta);
+
+    if (absDelta > SCROLL_THRESHOLD) {
+      touchStartY = currentY;
+      if (delta > 0) {
+        if (currentPage > 1) changePage(currentPage - 1);
+      } else {
+        if (currentPage < contentPages.length) changePage(currentPage + 1);
+      }
+    }
+  };
+
+  const onGlobalWheel = (event) => {
+    const THRESHOLD = 1;
+    let delta = event.deltaY;
+    if (delta > 100) delta = 100;
+    if (delta < -100) delta = -100;
+    deltaMouseScroll += delta / 100;
+    if (deltaMouseScroll > THRESHOLD) {
+      deltaMouseScroll = 0;
+      if (currentPage < contentPages.length) changePage(currentPage + 1);
+    } else if (deltaMouseScroll < -THRESHOLD) {
+      deltaMouseScroll = 0;
+      if (currentPage > 1) changePage(currentPage - 1);
+    }
+  };
+
   changePage(currentPage);
-  iconNextPage.addEventListener('click', () => changePage(currentPage + 1));
+  footer.addEventListener('click', () => changePage(currentPage + 1));
 
   menuDots.forEach((dot, idx) => dot.addEventListener('click', () => changePage(idx + 1)));
   page5LeftArrows.forEach((arrow) => arrow.addEventListener('click', prevTab));
   page5RightArrows.forEach((arrow) => arrow.addEventListener('click', nextTab));
 
   page2CardsContent.addEventListener('mousewheel', onWheel);
+  window.addEventListener('wheel', onGlobalWheel);
+  window.addEventListener('touchmove', onGlobalTouchMove);
+  window.addEventListener('touchstart', onTouchStart);
 };
 
 window.onload = init;
