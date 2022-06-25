@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/table.css" />
     <link rel="stylesheet" href="css/store-button.css" />
     <link rel="stylesheet" href="css/card.css" />
+    <link rel="stylesheet" href="css/demo-card.css" />
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/phone.css" />
@@ -175,7 +176,7 @@
       </div>
       <div id="page-1" style="display: flex" class="page__content page-1">
         <div class="page-1__desktop-not-phone">
-          <p class="page-1__paragraph mobile-f-h1 desktop-f-h1 mobile-ta-center">
+          <p class="page-1__header mobile-f-h1 desktop-f-h1 mobile-ta-center">
             Постройте дом быстрее и легче через приложение
           </p>
           <img class="page-1__phone phone desktop-none" src="assets/media/page1-phone.png" />
@@ -301,7 +302,30 @@
         <img class="page-1__phone phone mobile-none" src="assets/media/page1-phone.png" />
       </div>
 
-      <div id="page-2" style="display: none" class="page__content page-2"></div>
+      <div id="page-2" style="display: none" class="page__content page-2">
+        <div class="page-2__header mobile-f-h1 desktop-f-h2">Как это работает?</div>
+        <div class="page-2__cards">
+          <div class="page-2__cards-content">
+            <div style="background-color: var(--cl-blue)" class="demo-card">
+              <div class="demo-card__step-number">1</div>
+              <div class="demo-card__step-desc mobile-f-h1 desktop-f-body-large-2">
+                Выберите проект дома и застройщика
+              </div>
+              <img style="margin-bottom: auto" class="demo-card__picture" src="assets/media/page-3-step-1.png" />
+            </div>
+            <div style="background-color: #56abff" class="demo-card">
+              <div class="demo-card__step-number">2</div>
+              <div class="demo-card__step-desc mobile-f-h1 desktop-f-body-large-2">Начните строительство</div>
+              <img class="demo-card__picture" src="assets/media/page-3-step-2.png" />
+            </div>
+            <div style="background-color: #883fff" class="demo-card">
+              <div class="demo-card__step-number">3</div>
+              <div class="demo-card__step-desc mobile-f-h1 desktop-f-body-large-2">Наблюдайте стройку в приложении</div>
+              <img class="demo-card__picture" src="assets/media/page-3-step-3.png" />
+            </div>
+          </div>
+        </div>
+      </div>
 
       <div id="page-3" style="display: none" class="page__content page-3">
         <div class="page-3__not-cards">

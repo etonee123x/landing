@@ -1,0 +1,30 @@
+.page-2__cards {
+  margin-right: auto;
+  width: 80vw;
+  overflow-x: auto;
+}
+.page-2__cards-content {
+  display: inline-flex;
+}
+
+/* adaptive */
+/* mobile */
+@media (max-width: 640px) {
+  .page-2__header {
+    margin-bottom: 1rem;
+  }
+  .page-2__cards-content {
+    gap: 0.5rem;
+  }
+}
+
+/* adaptive */
+/* desktop */
+@media (min-width: 641px) {
+  .page-2__header {
+    margin-bottom: 3rem;
+  }
+  .page-2__cards-content {
+    gap: 1.5rem;
+  }
+}

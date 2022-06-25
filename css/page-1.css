@@ -1,7 +1,4 @@
 .page-1__header {
-}
-
-.page-1__paragraph {
   max-width: 40rem;
   margin-bottom: 1rem;
 }
@@ -22,6 +19,11 @@
   position: absolute;
   transform: translate(-50%, -33%) rotate(-15deg);
   left: 50%;
+}
+
+.page-1__store-buttons {
+  width: fit-content;
+  position: relative;
 }
 
 /* adaptive */
@@ -58,12 +60,6 @@
   .page-1__paragraph {
     margin-left: 0;
     margin-right: 0;
-  }
-  .page-1__header {
-    font-family: 'Montserrat';
-    font-size: 90px;
-    font-weight: 800;
-    line-height: 110px;
   }
   .page-1__store-buttons {
     gap: 1.5rem;
