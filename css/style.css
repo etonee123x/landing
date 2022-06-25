@@ -156,14 +156,6 @@ body {
   flex-direction: column;
 }
 
-.page__header {
-  height: 6vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: auto;
-}
-
 .page__content {
   justify-content: center;
   align-items: center;
