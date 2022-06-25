@@ -4,6 +4,7 @@ const init = () => {
   const contentPages = document.querySelectorAll('.page__content');
   const pageNumber = document.getElementById('page-number');
   const iconNextPage = document.getElementById('icon-next-page');
+  const header = document.getElementById('header');
 
   const page5Tabs = document.querySelectorAll('.page-5__tab');
   const page5LeftArrows = document.querySelectorAll('.page-5__arrow-left');
@@ -15,6 +16,10 @@ const init = () => {
   let page5ActiveTab = 1;
 
   const changePage = (number) => {
+    if (number === currentPage) return;
+    number === 1 || number === contentPages.length
+      ? header.classList.add('header_logo-only')
+      : header.classList.remove('header_logo-only');
     menuDots.forEach((dot) => dot.classList.remove('dot-wrapper_active'));
     menuDots[number - 1].classList.add('dot-wrapper_active');
     pageNumber.innerText = `${number < 10 ? '0' : ''}${number}`;
