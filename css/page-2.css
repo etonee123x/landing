@@ -1,6 +1,5 @@
 .page-2__cards {
   margin-right: auto;
-  width: 80vw;
   overflow-x: auto;
 }
 .page-2__cards-content {
@@ -16,6 +15,9 @@
   .page-2__cards-content {
     gap: 0.5rem;
   }
+  .page-2__cards {
+    width: 80vw;
+  }
 }
 
 /* adaptive */
@@ -26,5 +28,8 @@
   }
   .page-2__cards-content {
     gap: 1.5rem;
+  }
+  .page-2__cards {
+    width: 75vw;
   }
 }

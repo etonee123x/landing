@@ -71,6 +71,7 @@ body {
 }
 
 .page__content {
+  width: 90%;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -90,28 +91,28 @@ body {
 @media (max-width: 640px) {
   /* fonts */
   .mobile-f-h1 {
-    font-size: 16px;
-    font-weight: 750;
-    line-height: 20px;
-    letter-spacing: 0px;
+    font-size: 16px !important;
+    font-weight: 750 !important;
+    line-height: 20px !important;
+    letter-spacing: 0px !important;
   }
   .mobile-f-body-large-1 {
-    font-size: 14px;
-    font-weight: 550;
-    line-height: 20px;
-    letter-spacing: 0.25px;
+    font-size: 14px !important;
+    font-weight: 550 !important;
+    line-height: 20px !important;
+    letter-spacing: 0.25px !important;
   }
   .mobile-f-body-large-2 {
-    font-size: 14px;
-    font-weight: 750;
-    line-height: 20px;
-    letter-spacing: 0px;
+    font-size: 14px !important;
+    font-weight: 750 !important;
+    line-height: 20px !important;
+    letter-spacing: 0px !important;
   }
   .mobile-f-body-small {
-    font-size: 10px;
-    font-weight: 750;
-    line-height: 12px;
-    letter-spacing: 0px;
+    font-size: 10px !important;
+    font-weight: 750 !important;
+    line-height: 12px !important;
+    letter-spacing: 0px !important;
   }
 
   .page {
@@ -137,46 +138,46 @@ body {
 @media (min-width: 641px) {
   /* fonts */
   .desktop-f-h1 {
-    font-size: 48px;
-    font-weight: 750;
-    line-height: 48px;
-    letter-spacing: -0.5px;
+    font-size: 48px !important;
+    font-weight: 750 !important;
+    line-height: 48px !important;
+    letter-spacing: -0.5px !important;
   }
   .desktop-f-h2 {
-    font-size: 40px;
-    font-weight: 750;
-    line-height: 44px;
-    letter-spacing: -0.5px;
+    font-size: 40px !important;
+    font-weight: 750 !important;
+    line-height: 44px !important;
+    letter-spacing: -0.5px !important;
   }
   .desktop-f-h3 {
-    font-size: 32px;
-    font-weight: 750;
-    line-height: 36px;
-    letter-spacing: -0.5px;
+    font-size: 32px !important;
+    font-weight: 750 !important;
+    line-height: 36px !important;
+    letter-spacing: -0.5px !important;
   }
   .desktop-f-body-large-1 {
-    font-size: 20px;
-    font-weight: 550;
-    line-height: 28px;
-    letter-spacing: 0px;
+    font-size: 20px !important;
+    font-weight: 550 !important;
+    line-height: 28px !important;
+    letter-spacing: 0px !important;
   }
   .desktop-f-body-large-2 {
-    font-size: 20px;
-    font-weight: 750;
-    line-height: 28px;
-    letter-spacing: 0em;
+    font-size: 20px !important;
+    font-weight: 750 !important;
+    line-height: 28px !important;
+    letter-spacing: 0em !important;
   }
   .desktop-f-body-small-1 {
-    font-size: 14px;
-    font-weight: 550;
-    line-height: 20px;
-    letter-spacing: 0.25px;
+    font-size: 14px !important;
+    font-weight: 550 !important;
+    line-height: 20px !important;
+    letter-spacing: 0.25px !important;
   }
   .desktop-f-body-small-2 {
-    font-size: 14px;
-    font-weight: 750;
-    line-height: 20px;
-    letter-spacing: 0px;
+    font-size: 14px !important;
+    font-weight: 750 !important;
+    line-height: 20px !important;
+    letter-spacing: 0px !important;
   }
 
   .page {

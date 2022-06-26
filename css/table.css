@@ -1,7 +1,7 @@
 .table {
   margin: auto;
   padding: 20px 24px;
-  background-color: var(--gray2);
+  background-color: var(--cl-blue);
   border-radius: 16px;
 }
 
@@ -11,16 +11,12 @@
   padding-bottom: 12px;
 }
 
-.table__row:last-child {
-  box-shadow: 0px -1px 0px 0px var(--green) inset;
-}
-
 .table__cell:nth-child(2n + 1) {
-  color: var(--green);
+  color: #ffffffcc;
 }
 
 .table__cell:nth-child(2n) {
-  color: var(--red);
+  color: #ffb6b6;
 }
 
 .table__bottom {
@@ -41,20 +37,4 @@
 /* desktop */
 
 @media (min-width: 641px) {
-  .table__bottom {
-    font-family: Montserrat;
-    font-size: 22px;
-    font-weight: 700;
-    line-height: 27px;
-    letter-spacing: 0em;
-    text-align: left;
-  }
-  .table__content {
-    font-family: Montserrat;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 22px;
-    letter-spacing: 0em;
-    text-align: left;
-  }
 }

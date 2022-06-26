@@ -33,9 +33,6 @@
   .page-1__store-buttons {
     gap: 1rem;
   }
-  .page-1__phone {
-    height: 58.75vh;
-  }
   .page-1__desktop-not-phone {
     align-items: center;
   }
@@ -45,9 +42,6 @@
 /* desktop */
 
 @media (min-width: 641px) {
-  .page-1__phone {
-    height: 65vh;
-  }
   .page-1 {
     flex-direction: row;
     justify-content: space-evenly;

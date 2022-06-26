@@ -13,3 +13,21 @@
   height: 95%;
   position: absolute;
 }
+
+/* adaptive */
+/* mobile */
+
+@media (max-width: 640px) {
+  .phone {
+    height: 58.75vh;
+  }
+}
+
+/* adaptive */
+/* desktop */
+
+@media (min-width: 641px) {
+  .phone {
+    height: 65vh;
+  }
+}

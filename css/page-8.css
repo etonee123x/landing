@@ -1,69 +1,51 @@
-:root {
-  --coef-scale: 0.5;
+.page-8__header {
+  max-width: 40rem;
+  margin-bottom: 1rem;
 }
 
 .page-8 {
-  gap: 36px;
-}
-
-.page-8__launch-buttons {
-  margin-bottom: 36px;
-}
-
-.page-8__header {
-  margin: 0 40px;
-}
-
-.page-8__buttons {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.page-8__not-buttons {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.page-8__button {
-  margin-bottom: 24px;
+  position: relative;
 }
 
 .page-8__cards {
-  display: flex;
-  margin: 3vh 0;
-  height: 50vh;
-  width: 50vw;
-  position: relative;
-  flex-direction: column;
-  align-items: center;
-}
-
-.page-8__card_1 {
-  top: -20%;
-}
-
-.page-8__card_2 {
-  top: 20%;
-}
-
-.page-8__card {
-  width: 500px;
   position: absolute;
-  transform: matrix(
-    calc(var(--coef-scale) * 0.96),
-    calc(var(--coef-scale) * 0.1),
-    calc(var(--coef-scale) * -0.3),
-    calc(var(--coef-scale) * 0.99),
-    calc(var(--coef-scale) * 0),
-    calc(var(--coef-scale) * 0)
-  );
+}
+
+.page-8__store-buttons {
+  display: flex;
+  margin-top: 1.5rem;
+}
+
+.page-8__button {
+  margin-bottom: 20px;
+}
+.page-8__desktop-not-phone {
+  display: flex;
+  flex-direction: column;
+}
+.page-8__launch-soon {
+  position: absolute;
+  transform: translate(-50%, -33%) rotate(-15deg);
+  left: 50%;
+}
+
+.page-8__store-buttons {
+  width: fit-content;
+  position: relative;
+}
+.page-8__not-cards {
 }
 
 /* adaptive */
 /* mobile */
 
 @media (max-width: 640px) {
+  .page-8__store-buttons {
+    gap: 1rem;
+  }
+  .page-8__desktop-not-phone {
+    align-items: center;
+  }
 }
 
 /* adaptive */
@@ -71,18 +53,26 @@
 
 @media (min-width: 641px) {
   .page-8 {
-    flex-direction: column;
-  }
-  .page-8__not-buttons {
     flex-direction: row;
+    justify-content: space-evenly;
   }
-  .page-8__header {
-    width: 30vw;
+  .page-8__not-phone {
+    margin-left: 3vw;
+    margin-right: 3vw;
+    align-items: flex-start;
+  }
+  .page-8__paragraph {
     margin-left: 0;
     margin-right: 0;
   }
-  .page-8__buttons {
-    flex-direction: row;
-    gap: 16px;
+  .page-8__store-buttons {
+    gap: 1.5rem;
+  }
+  .page-8__desktop-not-phone {
+    gap: 1rem;
+    margin-right: auto;
+  }
+  .page-8__phone.mobile-none {
+    margin-right: auto;
   }
 }

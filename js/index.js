@@ -18,8 +18,8 @@ const init = () => {
   const footerDescription = document.getElementById('footer-description');
 
   const page5Tabs = document.querySelectorAll('.page-7__tab');
-  const page5LeftArrows = document.querySelectorAll('.page-7__arrow-left');
-  const page5RightArrows = document.querySelectorAll('.page-7__arrow-right');
+  const page5LeftArrows = document.querySelectorAll('.page-7__arrow_left');
+  const page5RightArrows = document.querySelectorAll('.page-7__arrow_right');
 
   const page2CardsContent = document.querySelector('.page-3__cards-content');
 

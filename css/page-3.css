@@ -2,13 +2,8 @@
   align-items: flex-start;
 }
 
-.page-3__header {
-  margin-bottom: 1.5rem;
-}
-
 .page-3__cards {
   margin-right: auto;
-  width: 75vw;
   overflow-x: auto;
 }
 
@@ -27,6 +22,12 @@
 /* mobile */
 
 @media (max-width: 640px) {
+  .page-3__cards {
+    width: 80vw;
+  }
+  .page-3__header {
+    margin-bottom: 1.5rem;
+  }
 }
 
 /* adaptive */
@@ -39,5 +40,9 @@
   }
   .page-3__cards {
     overflow: auto;
+    width: 75vw;
+  }
+  .page-3__header {
+    margin-bottom: 3.5rem;
   }
 }

@@ -3,16 +3,25 @@
   gap: 24px;
   justify-content: center;
   align-items: center;
-  margin-bottom: 36px;
 }
 
 .page-7__header {
-  margin: 0 40px;
   margin-bottom: 16px;
 }
 
+.page-7__tab {
+  width: 100%;
+}
+.page-7__between-arrows-text-block {
+  max-width: 38vw;
+}
+
 .page-7__paragraph {
-  margin: 0 40px;
+  color: var(--cl-grey);
+}
+
+.page-7__arrow-right {
+  color: black;
 }
 
 .page-7__between-arrows {
@@ -21,14 +30,14 @@
   align-items: center;
 }
 
-.page-7__between-arrows-text-block {
-  max-width: 300px;
-}
-
 /* adaptive */
 /* mobile */
 
 @media (max-width: 640px) {
+  .page-7__header {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+  }
 }
 
 /* adaptive */
@@ -39,11 +48,6 @@
     gap: 60px;
   }
   .page-7__header {
-    margin-left: 0;
-    margin-right: 0;
-  }
-  .page-7__paragraph {
-    margin-left: 0;
-    margin-right: 0;
+    margin-bottom: 1.5rem;
   }
 }
