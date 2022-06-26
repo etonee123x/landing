@@ -3,33 +3,21 @@
 }
 
 .page-3__header {
-  margin-bottom: 24px;
-}
-
-.page-3__paragraph {
-  margin-bottom: 16vh;
-}
-
-.page-3__not-cards {
-  margin: 0 60px;
+  margin-bottom: 1.5rem;
 }
 
 .page-3__cards {
-  width: 100%;
-}
-
-.page-3__cards-content {
-  padding: 0 10px;
-  display: flex;
+  margin-right: auto;
+  width: 75vw;
   overflow-x: auto;
-  gap: 20px;
-  padding: 9vh 4vw;
 }
 
 .page-3__cards-content {
+  display: inline-flex;
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
 .page-3__cards-content::-webkit-scrollbar {
   width: 0;
   height: 0;
@@ -39,9 +27,6 @@
 /* mobile */
 
 @media (max-width: 640px) {
-  .page-3__card {
-    min-width: 80vw;
-  }
 }
 
 /* adaptive */
@@ -53,7 +38,6 @@
     margin-right: 0;
   }
   .page-3__cards {
-    margin: 0 auto;
     overflow: auto;
   }
 }
